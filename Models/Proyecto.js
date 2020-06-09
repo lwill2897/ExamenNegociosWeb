@@ -20,22 +20,6 @@ const Proyecto = db.define(
     url: {
       type: Sequilize.STRING,
     },
-  },
-  {
-    hooks: {
-      beforeCreate(proyecto) {
-        console.log("Antes de insertar en la base de datos");
-        const url = slug(proyecto.nombre).toLowerCase();
-
-        proyecto.url = `${url}_${shortid.generate()}`;
-      },
-      beforeUpdate(proyecto) {
-        console.log("Antes de actualizar en la base de datos");
-        const url = slug(proyecto.nombre).toLowerCase();
-
-        proyecto.url = `${url}_${shortid.generate()}`;
-      },
-    },
   }
 );
 
