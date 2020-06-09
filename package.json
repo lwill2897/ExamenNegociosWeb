@@ -1,0 +1,27 @@
+{
+  "name": "examennegociosweb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lwill2897/ExamenNegociosWeb.git"
+  },
+  "keywords": [
+    "Examen",
+    "Will",
+    "Lara"
+  ],
+  "author": "Will Lara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lwill2897/ExamenNegociosWeb/issues"
+  },
+  "homepage": "https://github.com/lwill2897/ExamenNegociosWeb#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
