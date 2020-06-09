@@ -2,7 +2,7 @@
 const express = require("express");
 const routes = express.Router();
 
-const proyectosController = require("../controllers/proyectosController");
+const proyectosController = require("../Controllers/proyectosController");
 
 module.exports = function () {
   routes.get("/", proyectosController.home);

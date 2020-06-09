@@ -9,18 +9,16 @@ const shortid = require("shortid");
 const Proyecto = db.define(
   "proyecto",
   {
-    id: {
+    MONTO: {
       type: Sequilize.INTEGER,
-      primaryKey: true,
-      autoIncrement: true,
     },
-    nombre: {
-      type: Sequilize.STRING,
-    },
+    CANTIDAD: {
+        type: Sequilize.INTEGER,
+      },
     url: {
       type: Sequilize.STRING,
     },
-  }
+  },
 );
 
 module.exports = Proyecto;

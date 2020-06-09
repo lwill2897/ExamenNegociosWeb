@@ -1,4 +1,4 @@
-const Proyecto = require("../models/Proyecto");
+const Proyecto = require("../Models/Proyecto");
 
 exports.home = (req, res, next) => {
   res.render("crear_proyecto");
@@ -10,14 +10,12 @@ exports.nuevoProyecto = (req, res, next) => {
   const errores = [];
 
   if (!nombre) {
-    errores.push({ error: "El nombre del proyecto no puede ser vacío." });
+    errores.push({ error: "Esta vacio el calculo" });
   }
 
   if (errores.length) {
     res.render("crear_proyecto", {
       errores,
     });
-  } else {
-    res.send("Insertado en la BD");
   }
 };
